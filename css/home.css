@@ -1,0 +1,64 @@
+
+body{
+    background-image: url("../assets/home/background-home-mobile.jpg");
+}
+
+
+
+/* HERO SECTION */
+
+.main-heading{
+    font-family: var(--font-bellefair);
+    font-size: 80px;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.sub-heading{
+    color: var(--color-lavender-blue);
+    font-family: var(--font-barlow-condensed);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin-top: 47px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.description{
+    color: var(--color-lavender-blue);
+    font-family: var(--font-barlow);
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+
+
+/* ACTION BUTTON */
+
+.action-button{
+    background-color: white;
+    width: 150px;
+    margin-top: 79px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button-text{
+    color: var(--color-rich-black);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-bellefair);
+    font-size: 20px;
+}
+
+
+

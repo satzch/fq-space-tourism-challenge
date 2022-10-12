@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --font-barlow: 'Barlow', sans-serif;
+    --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+    --font-bellefair: 'Bellefair', serif;
+
+    --color-lavender-blue: #D0D6F9;
+    --color-rich-black: #0B0D17;
+    --color-arsenic: #383B4B;
+}
+
+body{
+    background-color: var(--color-rich-black);
+    background-repeat: no-repeat;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-menu-button{
+    border: none;
+    background: none;
+    z-index: 10;
+}
+
+
+
+/* SIDEBAR MENU */
+
+.sidebar-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30px);
+    width: 254px;
+    height: 667px;
+    z-index: 5;
+    transition: all 0.25s;
+}
+
+.sidebar-menu-list{
+    list-style-type: none;
+    margin-top: 122px;
+}
+
+.sidebar-menu-item{
+    margin-bottom: 39px;
+}
+
+.sidebar-menu-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-menu-active::after {
+    content: "";
+    position: absolute;
+    margin-top: -8px;
+    right: 0;
+    background-color: white;
+    width: 4px;
+    height: 31px;
+}
+
+.sidebar-menu-item span{
+    font-family: var(--font-barlow-condensed);
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    font-size: 16px;
+}
+
+.sidebar-menu-item-no{
+    font-weight: 700;
+}
+
+
+
+/* UTILITY */
+
+.hidden{
+    /* display: none; */
+    width: 0;
+    overflow: hidden;
+    
+}

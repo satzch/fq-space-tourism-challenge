@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/home.css" type="text/css">
+  <link rel="stylesheet" href="./css/common.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="./assets/home/logo.svg" alt="logo" class="logo">
+    <button class="sidebar-menu-button"><img src="./assets/home/hamburger-icon.svg" alt="menu-icon"></button>
+    <!-- <span class="menu-icon"></span> -->
+    <!-- <img src="./assets/home/hamburger-icon.svg" alt="menu-icon" > -->
+  </nav>
+
+  <div class="sidebar-menu hidden">
+    <ul class="sidebar-menu-list">
+      <li class="sidebar-menu-item">
+        <a href="./index.html" class="sidebar-menu-link sidebar-menu-active">
+          <span class="sidebar-menu-item-no">00</span><span class="sidebar-menu-item-title"> Home</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="./destination-moon.html" class="sidebar-menu-link">
+          <span class="sidebar-menu-item-no">01</span><span class="sidebar-menu-item-title"> Destination</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="./crew-commander.html" class="sidebar-menu-link">
+          <span class="sidebar-menu-item-no">02</span><span class="sidebar-menu-item-title"> Crew</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="./technology-vehicle.html" class="sidebar-menu-link">
+          <span class="sidebar-menu-item-no">03</span><span class="sidebar-menu-item-title"> Technology</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <main class="hero-section ">
+    <h3 class="sub-heading">
+      So, you want to travel to
+    </h3>
+    <h1 class="main-heading">
+      Space
+    </h1>
+    <p class="description">
+      Let’s face it; if you want to go to space, you might as well genuinely go to
+      outer space and not hover kind of on the edge of it. Well sit back, and relax
+      because we’ll give you a truly out of this world experience!
+    </p>
+  </main>
+
+  <div class="action-button">
+    <div class="action-button-text">
+      Explore
+    </div>
+  </div>
+
+  <script src="./scripts/sidebar-menu.js"></script>
+</body>
+
+</html>

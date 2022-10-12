@@ -1,0 +1,113 @@
+
+
+body{
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+}
+
+
+
+/* PAGE HEADING */
+
+.page-heading{
+    margin-top: 29px;
+}
+
+.page-heading span{
+    font-family: var(--font-barlow-condensed);
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.page-heading-no{
+    font-weight: 700;
+}
+
+.page-heading-text{
+    font-weight: 400;
+}
+
+
+
+/* HERO SECTION */
+
+.destination-image{
+    width: 170px;
+    height: 170px;
+    margin-top: 32px;
+}
+
+.destination-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.destination-list li a{
+    text-decoration: none;
+    position: relative;
+}
+
+.destination-list-active::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 36px;
+    height: 3px;
+    left: 50%;
+    margin: 20px 0 0 -18px;
+}
+
+.destination-list li a, .destination-distance-title, .destination-traveltime-title{
+    font-size: 14px;
+    font-family: var(--font-barlow-condensed);
+    letter-spacing: 2.36px;
+    color: var(--color-lavender-blue);
+    text-transform: uppercase;
+}
+
+.destination-heading{
+    margin-top: 44px;
+    font-family: var(--font-bellefair);
+    font-size: 56px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.destination-description{
+    font-size: 15px;
+    font-family: var(--font-barlow);
+    color: var(--color-lavender-blue);
+    line-height: 25px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-arsenic);
+    margin: 36px 0;
+}
+
+.destination-distance-title, .destination-traveltime-title, 
+ .destination-distance-value, .destination-traveltime-value {
+    color: var(--color-lavender-blue);
+    text-align: center;
+}
+
+.destination-distance-value, .destination-traveltime-value{
+    color: white;
+    font-size: 28px;
+    font-family: var(--font-bellefair);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.destination-traveltime{
+    margin-top: 44px;
+}

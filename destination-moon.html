@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/destination.css">
+  <link rel="stylesheet" href="./css/common.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="./assets/home/logo.svg" alt="logo" class="logo">
+    <button class="sidebar-menu-button"><img src="./assets/home/hamburger-icon.svg" alt="menu-icon"></button>
+    <!-- <span class="menu-icon"></span> -->
+    <!-- <img src="./assets/home/hamburger-icon.svg" alt="menu-icon" > -->
+  </nav>
+
+  <div class="sidebar-menu hidden">
+    <ul class="sidebar-menu-list">
+      <li class="sidebar-menu-item">
+        <a href="./index.html" class="sidebar-menu-link">
+          <span class="sidebar-menu-item-no">00</span><span class="sidebar-menu-item-title"> Home</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="./destination-moon.html" class="sidebar-menu-link sidebar-menu-active">
+          <span class="sidebar-menu-item-no">01</span><span class="sidebar-menu-item-title"> Destination</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="./crew-commander.html" class="sidebar-menu-link">
+          <span class="sidebar-menu-item-no">02</span><span class="sidebar-menu-item-title"> Crew</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="./technology-vehicle.html" class="sidebar-menu-link">
+          <span class="sidebar-menu-item-no">03</span><span class="sidebar-menu-item-title"> Technology</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <h1 class="page-heading">
+    <span class="page-heading-no">01</span>
+    <span class="page-heading-text"> Pick your destination</span>
+  </h1>
+
+  <img src="./assets/destination/image-moon.png" alt="picture of moon" class="destination-image">
+
+  <ul class="destination-list">
+    <li class="destination-list-item" ><a href="#" name="0" class="destination-list-active">Moon</a></li>
+    <li class="destination-list-item" ><a href="#" name="1" >Mars</a></li>
+    <li class="destination-list-item" ><a href="#" name="2" >Europa</a></li>
+    <li class="destination-list-item" ><a href="#" name="3" >Titan</a></li>
+  </ul>
+
+  <h1 class="destination-heading">Moon</h1>
+
+  <p class="destination-description">
+    See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+    regain perspective and come back refreshed. While you’re there, take in some history
+    by visiting the Luna 2 and Apollo 11 landing sites.
+  </p>
+
+  <div class="line"></div>
+
+  <div class="destination-distance">
+    <div class="destination-distance-title">Avg. distance</div>
+    <div class="destination-distance-value">384,400 km</div>
+  </div>
+
+  <div class="destination-traveltime">
+    <div class="destination-traveltime-title">Est. travel time</div>
+    <div class="destination-traveltime-value">3 days</div>
+  </div>
+
+  <script src="./scripts/sidebar-menu.js"></script>
+  <script src="./scripts/destinations.js"></script>
+</body>
+
+</html>
