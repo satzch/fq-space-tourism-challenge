@@ -25,7 +25,7 @@ circles.addEventListener("click", (e) => {
     updateInfo(option)
 })
 
-let promiseData = fetch("../data.json")
+let promiseData = fetch("https://raw.githubusercontent.com/satzch/fq-space-tourism-challenge/main/data.json")
     .then(response => response.json())
     .then(json => { return json })
 
