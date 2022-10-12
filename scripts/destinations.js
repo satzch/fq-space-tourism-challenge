@@ -30,7 +30,8 @@ let promiseData = fetch("https://raw.githubusercontent.com/satzch/fq-space-touri
 const updateInfo = async (option) => {
     const data = await promiseData
     
-    destImage.src = "." + data.destinations[option].images.png
+    destImage.src = data.destinations[option].images.png
+    destImage.alt = `Picture of ${data.destinations[option].name}`
     destName.innerText = data.destinations[option].name
     destDesc.innerText = data.destinations[option].description
     destDistance.innerText = data.destinations[option].distance

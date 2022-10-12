@@ -34,7 +34,7 @@ const updateInfo = async (option) => {
     const data = await promiseData
     // console.log(data);
 
-    crewImage.src = "." + data.crew[option].images.png
+    crewImage.src = data.crew[option].images.png
     crewName.innerText = data.crew[option].name
     crewBio.innerText = data.crew[option].bio
     crewRole.innerText = data.crew[option].role
