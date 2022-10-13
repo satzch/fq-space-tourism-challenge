@@ -42,14 +42,33 @@ body{
 /* ACTION BUTTON */
 
 .action-button{
+    position: relative;
     background-color: white;
     width: 150px;
     margin-top: 79px;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
+    height: 150px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.action-button::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 10.36%;
+    z-index: -1;
+    transition: width 0.25s, height 0.25s;
+}
+
+.action-button:hover::after{
+    width: 250px;
+    height: 250px;
 }
 
 .action-button-text{
