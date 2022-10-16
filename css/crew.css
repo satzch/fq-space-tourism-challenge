@@ -21,6 +21,7 @@ body{
 }
 
 .page-heading-no{
+    opacity: 25%;
     font-weight: 700;
 }
 
