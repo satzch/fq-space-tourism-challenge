@@ -35,8 +35,10 @@ const updateInfo = async (option) => {
     // console.log(data);
 
     crewImage.src = data.crew[option].images.png
+    crewImage.setAttribute("alt", `Picture of ${data.crew[option].name}`)
     crewName.innerText = data.crew[option].name
     crewBio.innerText = data.crew[option].bio
+    crewBio.style.width = `${data.crew[option].biowidth}`
     crewRole.innerText = data.crew[option].role
 
     // console.log(data.crew[option])

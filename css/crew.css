@@ -96,3 +96,57 @@ body{
     text-align: center;
     margin-top: 30px;
 }
+
+
+/* TABLET DESTIGN */
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+        padding-bottom: 0;
+    }
+
+    .page-heading-text, .page-heading-no{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .page-heading{
+        align-self: flex-start;
+        margin-top: 46px;
+    }
+
+    .crew-image{
+        order: 5;
+        height: 532px;
+        margin-top: 40px;
+    }
+
+    .crew-list-circles{
+        order: 4;
+        margin-top: 40px;
+    }
+
+    .crew-subheading{
+        font-size: 24px;
+        margin-top: 60px;
+    }
+
+    .crew-heading{
+        font-size: 40px;
+        margin-top: 8px;
+    }
+
+    .crew-bio{
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 16px;
+    }
+
+    .line{
+        display: none;
+    }
+
+
+}

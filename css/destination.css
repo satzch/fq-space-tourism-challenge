@@ -2,6 +2,7 @@
 
 body{
     background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
 }
 
 
@@ -20,6 +21,7 @@ body{
 }
 
 .page-heading-no{
+    opacity: 25%;
     font-weight: 700;
 }
 
@@ -60,10 +62,10 @@ body{
     content: "";
     position: absolute;
     background-color: white;
-    width: 36px;
+    width: 100%;
     height: 3px;
     left: 50%;
-    margin: 20px 0 0 -18px;
+    margin: 20px 0 0 -50%;
 }
 
 .destination-list li a, .destination-distance-heading, .destination-traveltime-heading{
@@ -114,4 +116,78 @@ body{
 
 .destination-traveltime{
     margin-top: 44px;
+}
+
+
+
+
+/* TABLET DESTIGN */
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+
+    .page-heading-text, .page-heading-no{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .page-heading{
+        align-self: flex-start;
+        margin-top: 46px;
+    }
+
+    .destination-image{
+        margin-top: 64px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .destination-list{
+        margin-top: 58px;
+    }
+
+    .destination-list li a{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .destination-list-active::after{
+        bottom: -14px;
+    }
+
+    .destination-heading{
+        margin-top: 64px;
+        font-size: 80px;
+    }
+
+    .destination-description{
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 28px;
+        width: 573px;
+    }
+    
+    .destination-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destination-traveltime{
+        margin-top: 0;
+        margin-left: 100px;
+    }
+
+    .destination-distance-heading, .destination-traveltime-heading{
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+
+    .destination-distance-value, .destination-traveltime-value{
+        font-size: 28px;
+    }
+
 }

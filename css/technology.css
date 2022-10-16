@@ -91,3 +91,60 @@ body{
     text-align: center;
     margin-top: 30px;
 }
+
+
+
+/* TABLET DESTIGN */
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+
+    .page-heading-text, .page-heading-no{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .page-heading{
+        align-self: flex-start;
+        margin-top: 46px;
+    }
+
+    .technology-image{
+        width: 100vw;
+        height: auto;
+    }
+
+    .technology-list-circles{
+        margin-top: 56px;
+        margin-bottom: 0;
+    }
+
+    .circle{
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+
+    .technology-subheading{
+        margin-top: 44px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .technology-heading{
+        margin-top: 16px;
+        font-size: 40px;
+    }
+
+    .technology-desc{
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 28px;
+        width: 458px;
+    }
+
+}

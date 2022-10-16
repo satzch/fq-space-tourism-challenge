@@ -1,5 +1,4 @@
-
-body{
+body {
     background-image: url("../assets/home/background-home-mobile.jpg");
 }
 
@@ -7,7 +6,7 @@ body{
 
 /* HERO SECTION */
 
-.main-heading{
+.main-heading {
     font-family: var(--font-bellefair);
     font-size: 80px;
     line-height: 100px;
@@ -17,7 +16,7 @@ body{
     font-weight: 400;
 }
 
-.sub-heading{
+.sub-heading {
     color: var(--color-lavender-blue);
     font-family: var(--font-barlow-condensed);
     font-size: 16px;
@@ -28,7 +27,7 @@ body{
     font-weight: 400;
 }
 
-.description{
+.description {
     color: var(--color-lavender-blue);
     font-family: var(--font-barlow);
     font-size: 15px;
@@ -41,7 +40,7 @@ body{
 
 /* ACTION BUTTON */
 
-.action-button{
+.action-button {
     position: relative;
     background-color: white;
     width: 150px;
@@ -54,7 +53,7 @@ body{
     align-items: center;
 }
 
-.action-button::after{
+.action-button::after {
     content: "";
     background-color: white;
     position: absolute;
@@ -66,12 +65,12 @@ body{
     transition: width 0.25s, height 0.25s;
 }
 
-.action-button:hover::after{
+.action-button:hover::after {
     width: 250px;
     height: 250px;
 }
 
-.action-button-text{
+.action-button-text {
     color: var(--color-rich-black);
     text-align: center;
     text-transform: uppercase;
@@ -81,3 +80,47 @@ body{
 
 
 
+
+
+/* TABLET DESTIGN */
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+
+    .sub-heading {
+        margin-top: 112px;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .main-heading {
+        margin: 0;
+        margin-top: 42px;
+        font-size: 150px;
+        line-height: 150px;
+        
+    }
+
+    .description {
+        margin-top: 64px;
+        width: 444px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .action-button{
+        width: 242px;
+        height: 242px;
+
+    }
+
+    .action-button-text{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+
+}
