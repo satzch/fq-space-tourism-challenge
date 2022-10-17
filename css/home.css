@@ -81,7 +81,6 @@ body {
 
 
 
-
 /* TABLET DESTIGN */
 
 @media screen and (min-width: 768px) {
@@ -101,7 +100,6 @@ body {
         margin-top: 42px;
         font-size: 150px;
         line-height: 150px;
-        
     }
 
     .description {
@@ -114,7 +112,7 @@ body {
     .action-button{
         width: 242px;
         height: 242px;
-
+        margin-bottom: 90px;
     }
 
     .action-button-text{

@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
     background-image: url("../assets/technology/background-technology-mobile.jpg");
     background-blend-mode: lighten;
@@ -8,34 +8,34 @@ body{
 
 /* PAGE HEADING */
 
-.page-heading{
+.page-heading {
     margin-top: 29px;
 }
 
-.page-heading span{
+.page-heading span {
     font-family: var(--font-barlow-condensed);
     letter-spacing: 2.7px;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-.page-heading-no{
+.page-heading-no {
     font-weight: 700;
     opacity: 25%;
 }
 
-.page-heading-text{
+.page-heading-text {
     font-weight: 400;
 }
 
 
-.technology-image{
+.technology-image {
     margin-top: 35px;
-    height: 170px;
-    width: 375px;
+    width: 100vw;
+    height: auto;
 }
 
-.technology-list-circles{
+.technology-list-circles {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@ body{
     margin-bottom: 30px;
 }
 
-.circle{
+.circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -57,19 +57,19 @@ body{
     align-items: center;
 }
 
-.active-circle{
+.active-circle {
     opacity: 1;
     background-color: white;
     color: black;
 }
 
 
-.font-bellafair{
+.font-bellafair {
     font-family: var(--font-bellafair);
     text-transform: uppercase;
 }
 
-.technology-subheading{
+.technology-subheading {
     font-size: 14px;
     letter-spacing: 2.36px;
     font-family: var(--font-barlow-condensed);
@@ -77,13 +77,13 @@ body{
     text-transform: uppercase;
 }
 
-.technology-heading{
+.technology-heading {
     font-size: 24px;
     margin-top: 16px;
     font-weight: 400;
 }
 
-.technology-desc{
+.technology-desc {
     font-size: 15px;
     font-family: var(--font-barlow);
     color: var(--color-lavender-blue);
@@ -98,49 +98,50 @@ body{
 
 @media screen and (min-width: 768px) {
 
-    body{
+    body {
         background-image: url("../assets/technology/background-technology-tablet.jpg");
     }
 
-    .page-heading-text, .page-heading-no{
+    .page-heading-text,
+    .page-heading-no {
         font-size: 20px;
         letter-spacing: 3.38px;
     }
 
-    .page-heading{
+    .page-heading {
         align-self: flex-start;
         margin-top: 46px;
     }
 
-    .technology-image{
+    .technology-image {
         width: 100vw;
         height: auto;
     }
 
-    .technology-list-circles{
+    .technology-list-circles {
         margin-top: 56px;
         margin-bottom: 0;
     }
 
-    .circle{
+    .circle {
         width: 60px;
         height: 60px;
         font-size: 24px;
         letter-spacing: 1.5px;
     }
 
-    .technology-subheading{
+    .technology-subheading {
         margin-top: 44px;
         font-size: 16px;
         letter-spacing: 2.7px;
     }
 
-    .technology-heading{
+    .technology-heading {
         margin-top: 16px;
         font-size: 40px;
     }
 
-    .technology-desc{
+    .technology-desc {
         margin-top: 16px;
         font-size: 16px;
         line-height: 28px;

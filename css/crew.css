@@ -96,6 +96,7 @@ body{
     line-height: 25px;
     text-align: center;
     margin-top: 30px;
+    width: auto;
 }
 
 
@@ -143,6 +144,7 @@ body{
         font-size: 16px;
         line-height: 28px;
         margin-top: 16px;
+        width: 458px;
     }
 
     .line{
