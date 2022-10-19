@@ -18,63 +18,70 @@
     <button class="sidebar-menu-button"><img src="./assets/home/hamburger-icon.svg" alt="menu-icon"></button>
     <!-- <span class="menu-icon"></span> -->
     <!-- <img src="./assets/home/hamburger-icon.svg" alt="menu-icon" > -->
+
+
+    <div class="sidebar-menu hidden">
+      <ul class="sidebar-menu-list">
+        <li class="sidebar-menu-item">
+          <a href="./index.html" class="sidebar-menu-link">
+            <span class="sidebar-menu-item-no">00</span><span class="sidebar-menu-item-title"> Home</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="./destination.html" class="sidebar-menu-link">
+            <span class="sidebar-menu-item-no">01</span><span class="sidebar-menu-item-title"> Destination</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="./crew.html" class="sidebar-menu-link">
+            <span class="sidebar-menu-item-no">02</span><span class="sidebar-menu-item-title"> Crew</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="./technology.html" class="sidebar-menu-link sidebar-menu-active">
+            <span class="sidebar-menu-item-no">03</span><span class="sidebar-menu-item-title"> Technology</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="sidebar-menu hidden">
-    <ul class="sidebar-menu-list">
-      <li class="sidebar-menu-item">
-        <a href="./index.html" class="sidebar-menu-link">
-          <span class="sidebar-menu-item-no">00</span><span class="sidebar-menu-item-title"> Home</span>
-        </a>
-      </li>
-      <li class="sidebar-menu-item">
-        <a href="./destination.html" class="sidebar-menu-link">
-          <span class="sidebar-menu-item-no">01</span><span class="sidebar-menu-item-title"> Destination</span>
-        </a>
-      </li>
-      <li class="sidebar-menu-item">
-        <a href="./crew.html" class="sidebar-menu-link">
-          <span class="sidebar-menu-item-no">02</span><span class="sidebar-menu-item-title"> Crew</span>
-        </a>
-      </li>
-      <li class="sidebar-menu-item">
-        <a href="./technology.html" class="sidebar-menu-link sidebar-menu-active">
-          <span class="sidebar-menu-item-no">03</span><span class="sidebar-menu-item-title"> Technology</span>
-        </a>
-      </li>
-    </ul>
-  </div>
 
   <h1 class="page-heading">
     <span class="page-heading-no">03</span>
     <span class="page-heading-text"> Space launch 101</span>
   </h1>
 
-  <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="picture of launch vehicle"
-    class="technology-image">
+  <div class="main-container">
+    <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="picture of launch vehicle"
+      class="technology-image">
 
-  <ul class="technology-list-circles">
-    <li class="technology-list-item">
-      <div class="circle active-circle" value="0">1</div>
-    </li>
-    <li class="technology-list-item">
-      <div class="circle" value="1">2</div>
-    </li>
-    <li class="technology-list-item">
-      <div class="circle" value="2">3</div>
-    </li>
-  </ul>
-
-  <div class="technology-subheading">The terminology...</div>
-  <div class="technology-heading font-bellafair">Launch vehicle</div>
+    <ul class="technology-list-circles">
+      <li class="technology-list-item">
+        <div class="circle active-circle" value="0">1</div>
+      </li>
+      <li class="technology-list-item">
+        <div class="circle" value="1">2</div>
+      </li>
+      <li class="technology-list-item">
+        <div class="circle" value="2">3</div>
+      </li>
+    </ul>
 
 
-  <p class="technology-desc">
-    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
-    payload from Earth's surface to space, usually to Earth orbit or beyond. Our
-    WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
-    it's quite an awe-inspiring sight on the launch pad!
-  </p>
+    <div class="technology-info-container">
+      <div class="technology-subheading">The terminology...</div>
+      <div class="technology-heading font-bellafair">Launch vehicle</div>
+
+
+      <p class="technology-desc">
+        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+        payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+        it's quite an awe-inspiring sight on the launch pad!
+      </p>
+    </div>
+  </div>
 
   <script src="./scripts/sidebar-menu.js"></script>
   <script src="./scripts/technology.js"></script>

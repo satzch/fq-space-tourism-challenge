@@ -32,6 +32,12 @@ body{
 
 /* HERO SECTION */
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .destination-image{
     width: 170px;
     height: 170px;
@@ -81,6 +87,7 @@ body{
     font-size: 56px;
     text-transform: uppercase;
     font-weight: 400;
+    text-align: center;
 }
 
 .destination-description{
@@ -128,7 +135,7 @@ body{
         background-image: url("../assets/destination/background-destination-tablet.jpg");
     }
 
-    .page-heading-text, .page-heading-no{
+    .page-heading span{
         font-size: 20px;
         letter-spacing: 3.38px;
     }
@@ -187,6 +194,104 @@ body{
     }
 
     .destination-distance-value, .destination-traveltime-value{
+        font-size: 28px;
+    }
+
+}
+
+
+
+/* DESKTOP DESTIGN */
+
+@media screen and (min-width: 1280px) {
+
+    body{
+        background-image: url("../assets/destination/background-destination-desktop.jpg");
+    }
+
+    .page-heading span{
+        font-size: 28px;
+        letter-spacing: 4.72px;
+    }
+
+    .page-heading{
+        align-self: flex-start;
+        margin-top: 76px;
+        margin-left: 110px;
+    }
+
+    .main-container{
+        margin-top: 64px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .destination-image{
+        margin-top: 0;
+        width: 445px;
+        height: 445px;
+    }
+
+    .destination-info-container{
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 157px;
+    }
+
+    .destination-list{
+        margin-top: 0;
+    }
+
+    .destination-list li a{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .destination-list-active::after{
+        bottom: -14px;
+    }
+
+    .destination-heading{
+        margin-top: 52px;
+        font-size: 100px;
+    }
+
+    .destination-description{
+        margin-top: 14px;
+        font-size: 18px;
+        width: 100%;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .line{
+        display: block;
+        margin-top: 55px;
+        margin-bottom: 0;
+    }
+    
+    .destination-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 28px;
+    }
+
+    .destination-traveltime{
+        margin-top: 0;
+        margin-left: 79px;
+    }
+
+    .destination-distance-heading, .destination-traveltime-heading{
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+
+    .destination-distance-value, .destination-traveltime-value{
+        margin-top: 12px;
         font-size: 28px;
     }
 

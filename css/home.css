@@ -6,6 +6,13 @@ body {
 
 /* HERO SECTION */
 
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-heading {
     font-family: var(--font-bellefair);
     font-size: 80px;
@@ -121,4 +128,80 @@ body {
     }
 
 
+}
+
+
+
+/* DESKTOP LAYOUT */
+
+@media screen and (min-width: 1280px) {
+
+    body {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
+
+    .main-container{
+        margin-top: 251px;
+        margin-bottom: 91px;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 110px;
+    }
+
+    .sub-heading {
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        margin-top: 0;
+    }
+
+    .main-heading {
+        margin: 0;
+        margin-top: 24px;
+        font-size: 150px;
+        line-height: auto;
+    }
+
+    .description {
+        margin-top: 24px;
+        width: 444px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .action-button{
+        width: 274px;
+        height: 274px;
+        margin-bottom: 0;
+    }
+
+    .action-button-text{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .action-button:hover::after {
+        width: 450px;
+        height: 450px;
+    }
+
+
+}
+
+@keyframes grow-shrink {
+    0% {
+        width: 450px;
+        height: 450px;
+    }
+
+    50% {
+        width: 445px;
+        height: 445px;
+    }
+
+    100% {
+        width: 450px;
+        height: 450px;
+    }
 }

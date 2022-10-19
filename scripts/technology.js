@@ -35,10 +35,28 @@ const updateInfo = async (option) => {
     // console.log(data);
 
     technologyImage.src = data.technology[option].images.landscape
+    if(window.innerWidth > 1280){
+        technologyImage.src = data.technology[option].images.portrait
+    }
     technologyName.innerText = data.technology[option].name
     technologyDesc.innerText = data.technology[option].description
 
     // console.log(data.crew[option])
 };
 
+
+const updateImage = async (option) => {
+    const data = await promiseData
+    
+    technologyImage.src = data.technology[option].images.landscape
+    if(window.innerWidth > 1280){
+        console.log(window.innerWidth);
+        technologyImage.src = data.technology[option].images.portrait
+    }
+}
+
 updateInfo(option)
+
+window.addEventListener("resize", (e) => {
+    updateImage(option)
+})
